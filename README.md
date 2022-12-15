@@ -17,7 +17,6 @@ yarn add react-native-accura-ocr
 ```sh
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.CAMERA" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-feature android:name="android.hardware.camera" />
 <uses-feature android:name="android.hardware.camera.autofocus" />
 ```
@@ -107,10 +106,6 @@ port install git-lfs
 ```sh
 <key>NSCameraUsageDescription</key>
 <string>App usage camera for scan documents.</string>
-<key>NSMicrophoneUsageDescription</key>
-<string>App usage microphone for oral verification.</string>
-<key>NSSpeechRecognitionUsageDescription</key>
-<string>App usage speech recognition for oral verification.</string>
 <key>NSPhotoLibraryUsageDescription</key>
 <string>App usage photos for get document picture.</string>
 <key>NSPhotoLibraryAddUsageDescription</key>
@@ -133,6 +128,7 @@ port install git-lfs
 **Note:-** By default this package has only device support so please try to build app in real device only. It will not work in simulators & emulators.
 
 ## Usage
+***Note:-*** Please get permissions of access device resources first before call any function of this package.
 
 Import react native library into file.
 ```js
@@ -413,7 +409,7 @@ AccuraOcr.startBankCard(passArgs, (error, success) => {
 |ACCURA_ERROR_CODE_UPSIDE_DOWN_SIDE|string|Document is upside down. Place it properly||
 ###
 
-## Details for Library Modifications Android
+<!-- ## Details for Library Modifications Android
 
 ### Configurations
 **Structure Modification :-**
@@ -492,11 +488,11 @@ File: /react-native-accura-ocr/ios/configs/accura_titles.swift
 
 You can change default settings here.
 - ### Recog Engine Initial Settings
-File: /react-native-accura-ocr/ios/recog_engine_config.swift
+File: /react-native-accura-ocr/ios/recog_engine_config.swift -->
 
-## Contributing
+<!-- ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow. -->
 
 ## License
 
