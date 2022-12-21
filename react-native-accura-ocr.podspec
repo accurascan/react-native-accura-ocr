@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
 
   s.dependency "React-Core"
   s.static_framework = true
-  s.dependency "AccuraOCR","3.1.2"
+  # s.dependency "AccuraOCR","3.1.2"
+  s.dependency "AccuraOCRSDK","3.0.0"
 end

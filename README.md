@@ -102,6 +102,13 @@ or
 
 port install git-lfs
 ```
+
+### Add following line into your Podfile above platform.
+```sh
+use_frameworks!
+```
+***Note:-*** Please do all necessary changes into Podfile to support use_frameworks!. It will be different for react-native version.
+
 ### Add this permissions into iOS Info.plist file.
 ```sh
 <key>NSCameraUsageDescription</key>
